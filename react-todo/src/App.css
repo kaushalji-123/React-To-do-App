@@ -1,0 +1,106 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(206, 203, 31);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.input-container > input {
+  width: 100%; /* Adjust this for specific screens */
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  font-size: 0.9em;
+}
+
+.input-container > button {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  margin: 10px auto;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  border-style: none;
+  background-color: rgb(142, 52, 211);
+}
+
+.add-task:hover {
+  background-color: rgb(111, 34, 182);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 30px;
+  gap: 5px;
+}
+
+.todo {
+  width: 100%; /* Adjust this for specific screens */
+  font-size: 1.2rem;
+  padding: 0px 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(251, 62, 232);
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action > button {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  border: none;
+  color: whitesmoke;
+  margin-left: 20px;
+  background-color: rgb(212, 32, 32);
+}
+
+/* Media Queries */
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+  .input-container > input {
+    width: 80%; /* Adjust as needed */
+  }
+
+  .todo {
+    width: 80%; /* Adjust as needed */
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 480px) {
+  .input-container > input {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .input-container > button {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .todo {
+    width: 100%; /* Full width on mobile */
+  }
+}
